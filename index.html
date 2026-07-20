@@ -6,12 +6,26 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="lolly" href="./lolly">
+
+   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
 
 </head>
 <body>
     <h1>Heihei, here is a Lollipop</h1>
+
+    <model-viewer
+    src="./lolly/lolly.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        tone-mapping="neutral" 
+        poster="./lolly/poster.webp" 
+        shadow-intensity="1.32" 
+        environment-image="./lolly/spruit_sunrise_1k_HDR.hdr" 
+        exposure="0.41" 
+        shadow-softness="0.6">
+    </model-viewer>
     
 </body>
 </html>
