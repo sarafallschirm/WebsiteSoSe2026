@@ -1,61 +1,101 @@
-body{
-    background-color: rgb(22, 92, 153);
-}
-
-h1{
+@font-face {
     font-family: myfont;
-    font-size: 5vw;
-    color: rgb(246, 191, 216);
-    text-align: center;
-    margin-top: 10vw;
+    src: url('./fonts/Bohemian typewriter.ttf');
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+     
+    background-color: rgb(233, 223, 191);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+#startbild{
+
+    position: relative;
+    background-image: url("./images/hintergrund.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 
 }
-p{
-    font-family:myfont;
+
+
+ #modelcontainer{
+display: flex!important;
+position: absolute !important;
+top:0;
+width: 100vw !important;;
+    height: 100vh!important;
+    align-items:center!important;
+    justify-content: left!important;
+
+ }    
+
+
+model-viewer{
+
+width: 50vw!important;
+
+ 
+}
+
+h1,.nav-links{
+    position: relative;
+    z-index:2;
+    pointer-events: auto;
+}
+ 
+#main{
+    width: 20vw;
+    align-items: center;
+    margin-top: 20vw;
+    margin-left: 40vw; 
+}
+p {
+    font-family: myfont;
     font-size: 2vw;
-    color: rgb(246, 191, 216);
+    color:  rgb(97, 30, 14);
     margin-bottom: 5px;
     text-align: left;
 }
 
-model-viewer{
-    width: 100%;
-    margin-bottom: 50vw;
-}
-    
-@font-face {
-    font-family: myfont;
-    src: url(./fonts/Bohemian\ typewriter.ttf);
-}
-
-<style>
-  /* Container, der sich absolut über den gesamten Hintergrund legt */
-  .bg-grid-container {
+.kugel{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 25 vh;
+    left: 0vw;
+    z-index: 1000;
+    width: 40vw;
+    height: 80vh;
+    display: block;
+
+}
+ .kugel model-viewer{
+    width: 100%;
+    height: 100%;
+ }
+
+#bild2{
+
+    position: relative;
+    background-image: url("./images/2.png");
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Schiebt alles nach ganz hinten */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Erzeugt ein Raster */
-    gap: 20px;
-    opacity: 0.5; /* Macht den Hintergrund dezent */
-    pointer-events: none; /* Verhindert, dass der Hintergrund Klicks blockiert */
-  }
 
-  .bg-grid-container model-viewer {
-    width: 100%;
-    height: 200px;
-  }
-</style>
+}
 
-<!-- Hintergrund-Raster mit vervielfältigtem Modell -->
-<div class="bg-grid-container">
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-  <model-viewer src="lolly.glb" auto-rotate disable-zoom></model-viewer>
-</div>
+
+ #bilder{
+    width: 40vw;
+    margin-left: 40vw;
+ }
+  
+ 
+ 

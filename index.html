@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="./style.css">
-
-   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
-    <h1>Heihei, here is a Lollipop</h1>
-
-   
-
- <model-viewer
-    src="./lolly/lolly.glb" 
-        ar 
-        ar-modes="webxr scene-viewer quick-look" 
-        camera-controls 
-        tone-mapping="neutral" 
-        poster="./lolly/poster.webp" 
-        shadow-intensity="1.32" 
-        environment-image="./lolly/spruit_sunrise_1k_HDR.hdr" 
-        exposure="0.41" 
-        shadow-softness="0.6">
-    </model-viewer>
+ 
+<div id="startbild" >
     
-    <div class="nav-links">
-    <a href="./about.html">
-        <p>Zur Galerie</p>
-    </a>
+    <div>
+        <img src="./images/disco room.svg" id= "main">
+       </div>
+      
+   <div id="modelcontainer">
 
-    <a href="=./about2.html">
-        <p>zu about</p>
-    </a>
-    </div>
+   <model-viewer camera-controls 
+   touch-action="pan-y" 
+   autoplay ar ar-modes="webxr scene-viewer" 
+   scale="1 1 1" 
+   shadow-intensity="1" 
+   src="./kugel/Kugelsturz_3.glb" 
+   alt="An animated 3D model of bowl"
+   class="kugel">
+   </model-viewer>
+   </div>  
+
+
+</div>
+       
+ <div id="bild2">
+   <img src="./images/kein plan metallic.png" id="bilder">
+   <p>  </p>
+   <img src="./images/kein plan punzen schwarz weiß.png" id="bilder">
+   <p>   </p>
+   <img src="./images/visitenkarte sf schwarz mit linien.jpg" id="bilder">
+
+
+</div>
+
 </body>
 </html>

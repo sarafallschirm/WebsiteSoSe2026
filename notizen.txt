@@ -1,0 +1,54 @@
+index.html
+
+<div id="modelcontainer2">
+
+      <model-viewer 
+        src="./3kugeln/3kugeln.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        tone-mapping="neutral" 
+        poster="poster.webp" 
+        shadow-intensity="1" 
+        autoplay
+        alt="3 bowls"
+        class="kugeln3">
+      </model-viewer>
+</div>  
+
+
+
+
+
+CSS
+#modelcontainer2{
+
+   display: flex;
+   position: relative ;
+   width: 100vw;
+   height: 80vh;
+   justify-content:right !important;
+   align-items: center;
+   margin-top: 25vh;
+
+ }    
+
+
+model-viewer{
+
+width: 50vw;
+
+ 
+}
+.kugeln3{
+    position: relative;
+    z-index: 100;
+    width: 15vw;
+    height: 20vh;
+    display: block;
+
+}
+ .kugeln3 model-viewer, #modelcontainer2 model-viewer{
+    width: 100% !important;
+    height:100% !important;
+ }
